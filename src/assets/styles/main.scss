@@ -1,0 +1,143 @@
+@import './variables.scss';
+@import './reset.scss';
+
+// 全局通用样式
+html, body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  color: $text-primary;
+  background-color: $theme-light-bg;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// 响应式布局相关
+html.is-mobile,
+html.is-tablet,
+html.is-desktop {
+  transition: all 0.3s;
+}
+
+// 清除浮动
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// 文本溢出省略
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+// flex布局工具类
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+// 间距工具类
+.mt-1 { margin-top: $spacing-mini; }
+.mt-2 { margin-top: $spacing-small; }
+.mt-3 { margin-top: $spacing-base; }
+.mt-4 { margin-top: $spacing-large; }
+.mt-5 { margin-top: $spacing-extra-large; }
+
+.mb-1 { margin-bottom: $spacing-mini; }
+.mb-2 { margin-bottom: $spacing-small; }
+.mb-3 { margin-bottom: $spacing-base; }
+.mb-4 { margin-bottom: $spacing-large; }
+.mb-5 { margin-bottom: $spacing-extra-large; }
+
+.ml-1 { margin-left: $spacing-mini; }
+.ml-2 { margin-left: $spacing-small; }
+.ml-3 { margin-left: $spacing-base; }
+.ml-4 { margin-left: $spacing-large; }
+.ml-5 { margin-left: $spacing-extra-large; }
+
+.mr-1 { margin-right: $spacing-mini; }
+.mr-2 { margin-right: $spacing-small; }
+.mr-3 { margin-right: $spacing-base; }
+.mr-4 { margin-right: $spacing-large; }
+.mr-5 { margin-right: $spacing-extra-large; }
+
+.m-1 { margin: $spacing-mini; }
+.m-2 { margin: $spacing-small; }
+.m-3 { margin: $spacing-base; }
+.m-4 { margin: $spacing-large; }
+.m-5 { margin: $spacing-extra-large; }
+
+.p-1 { padding: $spacing-mini; }
+.p-2 { padding: $spacing-small; }
+.p-3 { padding: $spacing-base; }
+.p-4 { padding: $spacing-large; }
+.p-5 { padding: $spacing-extra-large; }
+
+// 滚动条美化
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+} 
